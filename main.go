@@ -5,7 +5,7 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/gen2brain/go-unarr"
-	"github.com/mholt/archiver"
+	"github.com/mholt/archiver/v3"
 	"github.com/ulikunitz/xz"
 	"io"
 	"io/ioutil"
