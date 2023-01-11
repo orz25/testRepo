@@ -39,6 +39,7 @@ func testRAR(src string) {
 	write := bufio.NewWriter(w)
 	format := archiver.Lz4{}
 	format.Decompress(read, write)
+
 	//format := archiver.Lz4{}
 	//err := format.Decompress(src)
 	//if err != nil {
