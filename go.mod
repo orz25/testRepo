@@ -7,16 +7,17 @@ require (
 	github.com/koron-go/lha v0.0.0-20200727160739-fc87fee2f78d
 	github.com/mholt/archiver v3.1.1+incompatible
 	github.com/nwaples/rardecode v1.1.3
-	github.com/ulikunitz/xz v0.5.10
+	github.com/ulikunitz/xz v0.5.11
 )
 
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
-	github.com/dsnet/compress v0.0.1 // indirect
+	github.com/dsnet/compress v0.0.2-0.20210315054119-f66993602bf5 // indirect
 	github.com/frankban/quicktest v1.14.3 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/klauspost/compress v1.15.5 // indirect
 	github.com/klauspost/pgzip v1.2.5 // indirect
+	github.com/mholt/archiver/v3 v3.5.1 // indirect
 	github.com/mholt/archiver/v4 v4.0.0-alpha.7 // indirect
 	github.com/nwaples/rardecode/v2 v2.0.0-beta.2 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect

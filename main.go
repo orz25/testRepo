@@ -30,24 +30,25 @@ func main() {
 }
 
 func testRAR(src string) {
-	w, err := os.Create("/Users/orz/Downloads/files_to_play/folder/xz/Automations/untitled folder/test.txt")
-	f, err := os.Open(src)
-	if err != nil {
-		panic(err)
+	//w, err := os.Create("/Users/orz/Downloads/files_to_play/folder/xz/Automations/untitled folder/test.txt")
+	format := archiver.Rar{}
+	format.OpenFile(src)
+	defer format.Close()
+	entriesCount := 0
+	for {
+		entriesCount++
+		_, err := format.Read()
+		if err == io.EOF {
+			break
+		}
 	}
-	read := bufio.NewReader(f)
-	write := bufio.NewWriter(w)
-	format := archiver.Lz4{}
-	format.Decompress(read, write)
-	//format := archiver.Lz4{}
-	//err := format.Decompress(src)
 	//if err != nil {
 	//	panic(err)
 	//}
-	//for err == nil {
-	//	_, err = format.Read()
-	//}
-
+	//read := bufio.NewReader(f)
+	//write := bufio.NewWriter(w)
+	//format := archiver.Lz4{}
+	//format.Decompress(read, write)
 }
 
 func rarOpener(src string) {
